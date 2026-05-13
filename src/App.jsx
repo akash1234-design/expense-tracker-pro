@@ -275,34 +275,39 @@ function App() {
           <div className="bg-gray-800 p-6 rounded-2xl shadow-lg">
             <h2 className="text-xl font-bold mb-4">Expense Breakdown</h2>
             {chartData.length > 0? (
-              <ResponsiveContainer width="100%" height={280}>
-                <PieChart>
-                  <Pie
-                    data={chartData}
-                    dataKey="value"
-                    nameKey="name"
-                    cx="50%"
-                    cy="50%"
-                    outerRadius={90}
-                    label={({ name, percent }) => `${name} ${(percent * 100).toFixed(0)}%`}
-                    labelLine={false}
-                  >
-                    {chartData.map((entry, index) => (
-                      <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-                    ))}
-                  </Pie>
-                  <Tooltip
-                    contentStyle={{
-                      backgroundColor: '#1f2937',
-                      border: '1px solid #374151',
-                      borderRadius: '8px',
-                      color: '#fff'
-                    }}
-                    formatter={(value) => `₹${value.toLocaleString()}`}
-                  />
-                  <Legend wrapperStyle={{ color: '#fff', paddingTop: '20px' }} />
-                </PieChart>
-              </ResponsiveContainer>
+              <ResponsiveContainer width="100%" height={360}>
+  <PieChart>
+    <Pie
+      data={chartData}
+      dataKey="value"
+      nameKey="name"
+      cx="50%"
+      cy="50%"
+      outerRadius={90}
+      label={({ name, percent }) => `${name} ${(percent * 100).toFixed(0)}%`}
+      labelLine={false}
+    >
+      {chartData.map((entry, index) => (
+        <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+      ))}
+    </Pie>
+    <Tooltip
+      contentStyle={{
+        backgroundColor: '#1f2937',
+        border: '1px solid #374151',
+        borderRadius: '8px',
+        color: '#fff'
+      }}
+      formatter={(value, name) => [`₹${value.toLocaleString()}`, name]}
+      labelStyle={{ color: '#fff' }}
+      itemStyle={{ color: '#fff' }}
+    />
+    <Legend 
+      wrapperStyle={{ color: '#fff', paddingTop: '20px' }}
+      iconType="circle"
+    />
+  </PieChart>
+</ResponsiveContainer>
             ) : (
               <div className="h- flex items-center justify-center text-gray-500">
                 <div className="text-center">
