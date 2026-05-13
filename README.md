@@ -3,7 +3,7 @@
 Modern expense tracker built with React + Tailwind CSS + Recharts
 
 ## 🚀 Live Demo
-[View Live Project](https://expense-tracker-pro-xxxx.vercel.app) ← Yaha apna Vercel link daal dena
+[View Live Project](https://expense-tracker-pro-tau.vercel.app/) 
 
 ## 📸 Screenshots
 
