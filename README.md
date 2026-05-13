@@ -1,16 +1,47 @@
-# React + Vite
+# ExpenseTracker Pro 💎
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Modern expense tracker built with React + Tailwind CSS + Recharts
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
+[View Live Project](https://expense-tracker-pro-xxxx.vercel.app) ← Yaha apna Vercel link daal dena
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📸 Screenshots
 
-## React Compiler
+### 1. Dashboard with Budget Alert System
+![Dashboard](./screenshots/dashboard.png)
+Real-time budget tracking with conditional warning at 80% threshold
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 2. Interactive Expense Breakdown Chart
+![Chart](./screenshots/chart.png)
+Category-wise visualization using Recharts with responsive design
 
-## Expanding the ESLint configuration
+### 3. Recent Expenses with CSV Export
+![Expenses](./screenshots/expenses.png)
+Add/Delete expenses with date tracking and one-click CSV export
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Key Features
+- 🚨 **Smart Budget Alerts** - Orange warning at 80%, Red alert at 100% budget usage
+- 📊 **Live Pie Chart** - Category-wise breakdown with percentage labels
+- 💾 **Local Storage** - Data persists after browser refresh
+- 📥 **CSV Export** - Download all expenses for Excel/Google Sheets
+- 🔔 **Toast Notifications** - Success/Error feedback for all actions  
+- 📅 **Date Tracking** - Add expense with custom date selection
+- 📱 **Responsive UI** - Dark theme works on mobile & desktop
+- 🎨 **6 Categories** - Food, Bills, Transport, Shopping, Health, Entertainment
+
+## 🛠️ Tech Stack
+| Technology | Usage |
+| --- | --- |
+| **React 18** | Core framework with Hooks |
+| **Vite** | Build tool & dev server |
+| **Tailwind CSS** | Styling & responsive design |
+| **Recharts** | Data visualization |
+| **Lucide React** | Icon library |
+| **Vercel** | Deployment & hosting |
+
+## ⚡ Run Locally
+```bash
+git clone https://github.com/akash1234-design/expense-tracker-pro.git
+cd expense-tracker-pro
+npm install
+npm run dev
