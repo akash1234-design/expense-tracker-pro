@@ -8,15 +8,15 @@ Modern expense tracker built with React + Tailwind CSS + Recharts
 ## 📸 Screenshots
 
 ### 1. Dashboard with Budget Alert System
-![Dashboard](./screenshots/dashboard.png)
+![Dashboard](dashboard.png)
 Real-time budget tracking with conditional warning at 80% threshold
 
 ### 2. Interactive Expense Breakdown Chart
-![Chart](./screenshots/chart.png)
+![Chart](chart.png)
 Category-wise visualization using Recharts with responsive design
 
 ### 3. Recent Expenses with CSV Export
-![Expenses](./screenshots/expenses.png)
+![Expenses](expenses.png)
 Add/Delete expenses with date tracking and one-click CSV export
 
 ## ✨ Key Features
